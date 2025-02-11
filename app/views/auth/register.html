@@ -1,0 +1,13 @@
+<form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <label>Usuário:</label>
+    {{ form.username() }}
+
+    <label>Senha:</label>
+    {{ form.password() }}
+
+    <label>Foto de Perfil:</label>
+    {{ form.profile_pic() }}
+
+    {{ form.submit() }}
+</form>
